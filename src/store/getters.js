@@ -1,5 +1,5 @@
 const book = {
-  age: state => state.book.age
+  fileName: state => state.book.fileName
 }
 
 export default book

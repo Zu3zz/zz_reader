@@ -1,41 +1,12 @@
 <template>
     <div id="app">
-        <HelloWorld/>
-        <span class="text">ABCDEFG</span>
+        <router-view/>
     </div>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
-  import {mapGetters} from 'vuex'
-  const getters = {
-      a: () => 1,
-      b: () => 2,
-      c: () => 3
-    }
-  function fn(keys) {
-    const data = {}
-    keys.forEach(key => {
-      if(getters.hasOwnProperty(key)){
-        data[key] = getters[key]
-      }
-    })
-    return data
-  }
   export default {
     name: 'app',
-    components: {
-      HelloWorld
-    },
-    computed:{
-      ...mapGetters(['age']),
-      ...fn(['a','b','c'])
-    },
-    mounted() {
-      this.$store.dispatch('setName', 23).then(() => {
-        console.log(this.a,this.b,this.c)
-      })
-    }
   }
   document.addEventListener('DOMContentLoaded', () => {
     const html = document.querySelector('html')
@@ -46,10 +17,16 @@
 </script>
 
 <style scoped lang="scss">
-    @import "./assets/styles/global.scss";
-
-    .text {
-        font-family: 'Days One';
-        font-size: px2rem(20);
+    #app {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: #7d8188;
+        overflow: hidden;
     }
 </style>

@@ -3037,7 +3037,7 @@ entities@^1.1.1:
   resolved "https://registry.npm.taobao.org/entities/download/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
 
-epubjs@^0.3.84:
+epubjs@^0.3.71:
   version "0.3.84"
   resolved "https://registry.npm.taobao.org/epubjs/download/epubjs-0.3.84.tgz#c7f340df442cb994489c1b292fc4ba94d8861a0f"
   integrity sha1-x/NA30QsuZRInBspL8S6lNiGGg8=
