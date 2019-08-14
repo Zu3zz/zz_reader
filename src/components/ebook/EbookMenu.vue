@@ -17,19 +17,33 @@
       </div>
     </transition>
     <ebook-setting-font></ebook-setting-font>
+    <ebook-setting-font-popup></ebook-setting-font-popup>
+    <ebook-setting-theme></ebook-setting-theme>
+    <ebook-setting-progress></ebook-setting-progress>
+    <ebook-slide></ebook-slide>
+    <ebook-speaking-icon></ebook-speaking-icon>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import EbookSettingFont from './EbookSettingFont'
-import { ebookMixin } from '../../utils/mixin.js'
+import EbookSettingFontPopup from './EbookSettingFontPopup'
+import EbookSettingTheme from './EbookSettingTheme'
+import EbookSettingProgress from './EbookSettingProgress'
+import EbookSpeakingIcon from './EbookSpeakingIcon'
+
+import EbookSlide from './EbookSlide'
+import { ebookMixin } from '@/utils/mixin'
+
 export default {
-  cmixins: [ebookMixin],
+  mixins: [ebookMixin],
   components: {
-    EbookSettingFont
-  },
-  data() {
-    return {}
+    EbookSettingFontPopup,
+    EbookSlide,
+    EbookSettingProgress,
+    EbookSettingFont,
+    EbookSettingTheme,
+    EbookSpeakingIcon
   }
 }
 </script>
