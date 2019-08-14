@@ -38,7 +38,9 @@
     "rules": {
       "no-console": "off",
       "no-debugger": "off",
-      "no-empty": "off"
+      "no-empty": "off",
+      "vue/return-in-computed-property": "off",
+      "vue/no-use-v-if-with-v-for": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"
